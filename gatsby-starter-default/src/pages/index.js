@@ -5,6 +5,12 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
+// Google Analytics
+import ReactGA from 'react-ga';
+
+// GA_TRACKING_ID
+const TRACKING_ID = "UA-240638716-1";
+ReactGA.initialize(TRACKING_ID);
 
 const links = [
   {
