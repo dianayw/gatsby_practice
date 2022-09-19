@@ -9,7 +9,7 @@ import ReactGA from 'react-ga';
 
 const TRACKING_ID = "UA-240638716-1"; // GA_TRACKING_ID
 ReactGA.initialize(TRACKING_ID, {debug:true });
-ReactGA.pageview('test-init-pageview'); //todelete 
+ReactGA.pageview('test-init-pageview-bbbbbbbbbb'); //todelete 
 
 //METHOD 2
 //typeof window !== "undefined" && window.gtag("event", "click", { ...data })

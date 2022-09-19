@@ -7,6 +7,17 @@ import Seo from "../components/Seo"
 import Event from "../components/Event"
 
 import * as styles from "./events.module.css"
+ 
+// import {TabPanel, a11yProps, BasicTabs} from "../components/tab.js"
+// TabPanel(props)
+
+// TabPanel.propTypes = {
+//   children: PropTypes.node,
+//   index: PropTypes.number.isRequired,
+//   value: PropTypes.number.isRequired,
+// };
+// a11yProps(index)
+// BasicTabs()
 
 const EventsPage = ({ data }) => {
   return (
@@ -27,6 +38,7 @@ const EventsPage = ({ data }) => {
         />
         <h1 className={styles.heading}>Events</h1>
         <div>
+          {/* <BasicTabs/> */}
           <p>We attend and present at many events. Come join us!</p>
         </div>
       </section>
