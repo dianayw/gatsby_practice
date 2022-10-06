@@ -1,0 +1,93 @@
+.iems {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.iems .iems_brief {
+  margin: 60px 10px 60px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.iems .iems_brief .iems_content {
+  width: 500px;
+  margin: 0 10px;
+}
+.iems .iems_brief h3 {
+  font-size: 24px;
+}
+.iems .iems_brief p {
+  font-size: 14px;
+  text-align: justify;
+}
+.iems .iems_brief .iems_text_bg {
+  width: 400px;
+  overflow: hidden;
+  background-image: url(../images/iems_txt_bg.png);
+  background-size: 80%;
+  background-position: topleft;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.iems .iems_brief img {
+  width: 85%;
+  position: absolute;
+  top: 20%;
+  right: 0;
+}
+.iems .iems_feature {
+  margin: 60px 0 20px;
+}
+.iems .iems_feature h3 {
+  font-size: 16px;
+  text-align: center;
+  color: #555;
+}
+.iems .iems_feature .iems_fea_content {
+  margin: 20px 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.iems .iems_feature .iems_fea_content > * {
+  width: 410px;
+  height: 220px;
+}
+.iems .iems_feature .iems_fea_img {
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  background-size: contain;
+}
+.iems .iems_feature .iems_fea_1 .iems_fea_img {
+  background-image: url(../images/fea_icon_9.png);
+}
+.iems .iems_feature .iems_fea_2 .iems_fea_img {
+  background-image: url(../images/fea_icon_10.png);
+}
+.iems .iems_feature .iems_fea_3 .iems_fea_img {
+  background-image: url(../images/fea_icon_11.png);
+}
+.iems .iems_feature .iems_fea_4 .iems_fea_img {
+  background-image: url(../images/fea_icon_12.png);
+}
+.iems .iems_feature h4 {
+  text-align: center;
+  color: #44888b;
+  font-size: 16px;
+  margin: 10px 0;
+}
+.iems .iems_feature p {
+  text-align: center;
+  font-size: 14px;
+  margin: 10px 0;
+}
+.iems .research_background {
+  margin: 60px 80px;
+}
+.iems .research_background h3 {
+  font-size: 16px;
+  text-align: center;
+  color: #555;
+}
+.iems .research_background p {
+  text-align: center;
+}

@@ -1,0 +1,144 @@
+.About {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.About .company_profile {
+  margin: 60px 0 40px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.About .company_profile .profile_bg {
+  height: 390px;
+  width: 500px;
+  background-image: url(../images/profile_bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  position: relative;
+}
+.About .company_profile img {
+  height: 75%;
+  position: absolute;
+  top: 10%;
+}
+.About .company_profile .profile_content {
+  max-width: 500px;
+  padding: 10px;
+}
+.About .company_profile h3 {
+  font-size: 24px;
+  color: #555;
+}
+.About .company_profile p {
+  text-align: justify;
+}
+.About .company_more {
+  margin: 40px 60px;
+}
+.About .company_more p {
+  margin: 20px 0;
+  font-size: 16px;
+}
+.About .company_more span {
+  font-size: 18px;
+  font-weight: 700;
+  color: #555;
+}
+.About .feature {
+  margin-top: 60px;
+}
+.About .feature h3 {
+  text-align: center;
+}
+.About .feature .fea_content {
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.About .feature .fea_content > * {
+  width: 410px;
+  height: 250px;
+}
+.About .feature .fea_img {
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  background-size: contain;
+}
+.About .feature .fea_1 .fea_img {
+  background-image: url(../images/fea_icon_1.png);
+}
+.About .feature .fea_2 .fea_img {
+  background-image: url(../images/fea_icon_2.png);
+}
+.About .feature .fea_3 .fea_img {
+  background-image: url(../images/fea_icon_3.png);
+}
+.About .feature .fea_4 .fea_img {
+  background-image: url(../images/fea_icon_4.png);
+}
+.About .feature h4 {
+  text-align: center;
+  color: #44888b;
+  font-size: 20px;
+  margin: 10px 0;
+}
+.About .feature p {
+  text-align: center;
+  font-size: 16px;
+  margin: 10px 0;
+}
+.About .roles {
+  padding: 40px;
+  background-image: linear-gradient(#000a, #000a), url(../images/bg_role.png);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.About .roles h3 {
+  width: 1000px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+}
+.About .roles > div {
+  height: 360px;
+  width: 480px;
+  margin: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  background-image: url(../images/role_text_bg.png);
+  background-size: cover;
+  color: #ddd;
+}
+.About .roles img {
+  max-width: 480px;
+}
+.About .roles h5 {
+  margin: 10px 20px;
+}
+.About .roles p {
+  margin: 10px 20px;
+  font-size: 13px;
+}
+.About .company_office {
+  margin: 60px;
+}
+.About .company_office h3 {
+  text-align: center;
+  color: #555;
+  margin: 30px;
+}
+.About .company_office > div {
+  max-width: 1080px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+.About .company_office img {
+  width: 340px;
+}

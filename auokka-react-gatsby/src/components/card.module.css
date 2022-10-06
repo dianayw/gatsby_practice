@@ -1,0 +1,37 @@
+.card {
+  max-width: 720px;
+  height: 80px;
+  margin: 60px auto;
+  padding: 40px;
+  background-image: url(../images/card_bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card h5 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  color: white;
+}
+.card > * {
+  text-decoration: none;
+}
+.card div {
+  padding: 10px;
+  border: 1px solid white;
+  color: white;
+}
+.card p {
+  margin: 0;
+  padding-right: 30px;
+  font-size: 12px;
+  font-weight: 600;
+  background-image: url(../images/white_arrow.png);
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: right;
+}

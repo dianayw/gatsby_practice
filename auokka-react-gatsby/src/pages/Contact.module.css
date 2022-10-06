@@ -1,0 +1,59 @@
+.Contact {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.Contact .map {
+  height: 600px;
+}
+.Contact .map h3 {
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+}
+.Contact .map > div {
+  height: 500px;
+  position: relative;
+}
+.Contact .map div > :first-child {
+  width: 100%;
+}
+.Contact .map div > :last-child {
+  width: 90px;
+  position: absolute;
+  left: 483px;
+  top: 192px;
+}
+.Contact .contactdetails {
+  margin: 40px 100px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.Contact .contactdetails > div {
+  width: 200px;
+}
+.Contact .contactdetails h5 {
+  margin-bottom: 5px;
+  padding-top: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.Contact .contactdetails p {
+  margin-top: 0;
+  text-align: center;
+  font-size: 12px;
+}
+.Contact .contactdetails div:nth-child(1) h5 {
+  background-image: url(../images/green_mail.png);
+}
+.Contact .contactdetails div:nth-child(2) h5 {
+  background-image: url(../images/green_phone.png);
+}
+.Contact .contactdetails div:nth-child(3) h5 {
+  background-image: url(../images/green_facebook.png);
+}
+.Contact .contactdetails div:nth-child(4) h5 {
+  background-image: url(../images/green_location.png);
+}

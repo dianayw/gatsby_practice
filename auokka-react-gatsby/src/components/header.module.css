@@ -1,0 +1,100 @@
+header {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+header .left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+header .right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+}
+
+header .logo {
+    height: 50px;
+}
+
+header .tab {
+    display: inline-block;
+    padding: 10px;
+    margin-left: 40px;
+    font-size: 14px;
+    text-decoration: none;
+    color: rgba(51, 51, 51);
+    font-family: Arial;
+    font-weight: 600;
+}
+
+header .account {
+    padding: 10px;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: Arial;
+    font-weight: 600;
+}
+
+header .account .icon {
+    height: 20px;
+}
+
+header .account .link {
+    text-decoration: none;
+}
+
+header .demo {
+    padding: 5px;
+    height: 30px;
+    width: 120px;
+    border: 2px solid var(--teal-green);
+    border-radius: 8px;
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .demo .btn {
+    color: var(--teal-green);
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 14px;
+    font-family: Arial;
+    font-weight: 700;
+    text-align: center;
+}header .left .extra_bar {
+    width: 1200px;
+    height: 40px;
+    position: absolute;
+    top: 60px;
+    border-top: 1px solid var(--light-gray);
+    border-bottom: 1px solid var(--light-gray);
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+header .left .extra_bar :first-child {
+    margin-left: 325px;
+}
+
+header .left .extra_tab {
+    display: inline-block;
+    padding: 10px;
+    margin-right: 20px;
+    font-size: 14px;
+    text-decoration: none;
+    color: rgba(51, 51, 51);
+    font-family: Arial;
+    font-weight: 600;
+}

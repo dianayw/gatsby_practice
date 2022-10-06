@@ -1,0 +1,70 @@
+footer {
+            
+    background-color: var(--dark-gray);
+    height: 220px; 
+}
+footer .section {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .left {
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    border-radius: 8px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .logo {
+    height: 70px;
+}
+footer .heading {
+    height: 15px;
+    padding: 15px;
+    color:white;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 600;
+}
+footer .middle {
+    width: 30%;
+}
+footer .links{
+    height: 135px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+footer .links a {
+    width: 70px;
+    height: 15px;
+    padding: 5px;
+    margin: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    color:white;
+}
+footer .right {
+    width: 30%;
+}
+footer .right img{
+    height: 30px;
+    padding: 5px;
+    margin-left: 10px;
+}
+footer .right button{
+/* todo */
+}
+footer .line{
+    height: 20px;
+    text-align: center;
+    font-family: Arial;
+    font-weight: 600;
+    font-size: 12px;
+}
