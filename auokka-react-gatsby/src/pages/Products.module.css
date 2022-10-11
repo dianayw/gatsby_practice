@@ -1,25 +1,28 @@
 .products {
+  max-width: var(--desktop-max-width);
   margin: 0 auto;
-  max-width: 1200px;
 }
+/* ====== 1 auokka brief ====== */
 .products .auokka_brief {
   margin: 60px 10px 60px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .products .auokka_brief .auokka_content {
-  width: 500px;
+  width: 50%;
   margin: 0 10px;
 }
 .products .auokka_brief h3 {
   font-size: 24px;
+  color: var(--dark-gray);
 }
 .products .auokka_brief p {
   font-size: 14px;
   text-align: justify;
 }
 .products .auokka_brief .auokka_text_bg {
-  width: 400px;
+  width: 45%;
+  min-height: 350px;
   overflow: hidden;
   background-image: url(../images/auokka_txt_bg.png);
   background-size: 80%;
@@ -27,29 +30,31 @@
   background-repeat: no-repeat;
   position: relative;
 }
-.products .auokka_brief img {
+.products .auokka_brief .auokka_img {
   width: 85%;
   position: absolute;
   top: 20%;
   right: 0;
 }
+/* ====== 2 platform features ====== */
 .products .auokka_feature {
   margin: 60px 0 20px;
+  padding: 0 10%;
 }
 .products .auokka_feature h3 {
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
-  color: #555;
+  color: var(--dark-gray);
 }
 .products .auokka_feature .auo_fea_content {
-  margin: 20px 100px;
+  margin: 40px auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 .products .auokka_feature .auo_fea_content > * {
-  width: 410px;
-  height: 220px;
+  width: 400px;
+  height: 250px;
 }
 .products .auokka_feature .auo_fea_img {
   height: 100px;
@@ -71,22 +76,23 @@
 }
 .products .auokka_feature h4 {
   text-align: center;
-  color: #44888b;
-  font-size: 16px;
+  color: var(--teal-green);
+  font-size: 20px;
   margin: 10px 0;
 }
 .products .auokka_feature p {
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
   margin: 10px 0;
 }
+/* ====== 3 function display ====== */
 .products .function_display {
   margin: 60px 0;
 }
 .products .function_display h3 {
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
-  color: #555;
+  color: var(--dark-gray);
 }
 .products .function_display .func_content {
   margin-bottom: 60px;
@@ -95,8 +101,8 @@
   justify-content: space-evenly;
 }
 .products .function_display .func_content > * {
-  width: 250px;
-  height: 450px;
+  width: 300px;
+  height: 480px;
   border-radius: 5px;
   box-shadow: 0px 0px 8px 3px #ddd;
   position: relative;
@@ -106,7 +112,7 @@
   padding-top: 70px;
   text-align: center;
   font-size: 18px;
-  color: #555;
+  color: var(--dark-gray);
   position: relative;
   top: -15px;
   background-size: 40px;
@@ -125,7 +131,8 @@
 .products .function_display p {
   font-size: 12px;
   font-weight: 600;
-  color: #555;
+  line-height: 24px;
+  color: var(--dark-gray);
   margin: 6px 40px;
   padding-left: 22px;
   background-image: url("../images/tick_icon.png");
@@ -135,14 +142,13 @@
 .products .function_display .func_3 p {
   background-image: url("../images/return_icon.png");
 }
-
 .products .function_display h6 {
   width: 150px;
   margin: 20px 0;
   padding: 20px 10px;
   position: absolute;
   bottom: 0;
-  left: 40px;
+  left: 75px;
   background-image: url("../images/green_grad_bg.png");
   background-size: 100% 100%;
   font-size: 12px;

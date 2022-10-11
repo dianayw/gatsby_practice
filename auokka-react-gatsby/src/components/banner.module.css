@@ -1,73 +1,69 @@
 .banner {
-    margin: 0 auto;
-    background-image: url(../images/banner_image.png);
-    background-size: cover;
-    max-width: 1200px;
-    max-height: 500px;
+  max-width: var(--desktop-max-width);
+  margin: 0 auto;
+  position: relative;
 }
-
-.banner .section {
-    height: 480px;
+/* ====== background image ====== */
+.banner StaticImage {
+  width: var(--desktop-max-width);
 }
-
+/* ====== left: text ====== */
 .banner .content {
-    width: 400px;
-    height: inherit;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+  width: 36%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .banner .p1 {
-    margin: 40px auto 0;
-    padding: 10px;
-    color: white;
-    font-size: 20px;
-    font-family: Arial;
-    text-align: center;
-    white-space: nowrap;
+  margin: 5% auto 0;
+  color: white;
+  font-size: 22px;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .banner .p2 {
-    margin: 0 auto;
-    color: white;
-    font-size: 18px;
-    font-family: Arial;
-    font-weight: 600;
-    text-align: center;
-    line-height: 42px;
+  margin: 0 auto;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 40px;
 }
 
 .banner .p3 {
-    margin: 0 auto 40px;
-    border: 1px black;
+  margin: 0 auto 5%;
+  border: 1px black;
 }
 
 .banner .btn {
-    padding: 5px;
-    border: 1px solid var(--dark-gray);
-    background-color: #cff;
-    border-radius: 3px;
-    color: black;
-    font-size: 12px;
-    text-decoration: none;
-    font-family: Arial;
-    font-weight: 600;
-    text-align: center;
-    white-space: nowrap;
-    line-height: 21px;
+  padding: 5px;
+  border: 2px solid var(--dark-gray);
+  background-color: #dff;
+  border-radius: 3px;
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  line-height: 20px;
 }
 
+/* ====== bottom: bar ====== */
 .banner .bar_set {
-    width: 152px;
-    height: 20px;
-    margin: 0 auto;
+  height: 4%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 .banner .bars {
-    width: 152px;
-    height: 4px;
-    background: url(../images/banner_bars.png) 100% no-repeat;
-    background-size: 100% 100%;
+  width: 20%;
+  margin: 0 40%;
 }

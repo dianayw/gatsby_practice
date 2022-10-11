@@ -8,6 +8,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  font-family: var(--en-font);
 }
 
 /* Remove default padding */
@@ -77,3 +78,20 @@ select {
     scroll-behavior: auto !important;
   }
 } */
+
+/* ====== Auokka ====== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 16px 0;
+}
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}

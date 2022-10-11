@@ -1,36 +1,41 @@
 .Home {
+  max-width: var(--desktop-max-width);
   margin: 0 auto;
-  max-width: 1200px;
 }
+/* ====== 1 cooperator ====== */
 .Home .cooperator {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 .Home .cooperator > * {
-  max-height: 70px;
-  max-width: 70px;
-  margin: 30px;
+  width: 5%;
+  margin: 40px 0;
   object-fit: contain;
 }
-
+.Home .cooperator img {
+  object-fit: contain;
+}
+/* ====== 2 about article ====== */
 .Home .about_article {
-  margin: 0 100px;
-  padding-top: 20px;
+  margin: 0 15%;
   border-top: 2px solid #ddd;
   text-align: center;
   line-height: 22px;
+}
+.Home .about_article h3 {
+  padding-top: 20px;
 }
 .Home .about_article p {
   font-size: 16px;
 }
 .Home .about_article .view_btn {
-  height: 20px;
-  width: 100px;
+  height: 40px;
+  width: 120px;
   margin: 0 auto;
   border-radius: 5px;
   padding: 10px;
-  background-color: #91c151;
+  background-color: var(--grass-green);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,91 +50,87 @@
   width: 15px;
   margin-left: 8px;
 }
+/* ====== 3 projects ====== */
 .Home .projects {
-  height: 300px;
   width: inherit;
-  margin-top: 40px;
+  margin-top: 60px;
   display: flex;
   justify-content: center;
 }
 .Home .projects > * {
   margin: 20px;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 0px 0px 8px 3px #ddd;
-  background-color: white;
-  height: 220px;
-  width: 400px;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
+  width: 40%;
+  padding: 20px 20px 30px 20px;
   position: relative;
 }
 .Home .projects .proj_tag {
-  height: 32px;
-  width: 80px;
+  height: 40px;
+  width: 100px;
   position: absolute;
-  left: 20px;
-  top: -15px;
+  left: 5%;
+  top: -20px;
   background-image: url(../images/green_tag.png);
   background-size: cover;
 }
 .Home .projects .proj_tag p {
   margin: 0;
   text-align: center;
-  font-size: 15px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 36px;
   color: white;
 }
-.Home .projects .proj_content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.Home .projects .proj_content h5 {
-  margin: 10px auto 8px 0;
-  font-size: 12px;
+.Home .projects h5 {
+  margin: 10px 0 8px;
+  font-size: 16px;
   line-height: 12px;
 }
-.Home .projects .proj_content p {
-  width: 250px;
-  margin: 0 auto 5px 0;
-  font-size: 10px;
+.Home .projects aside > p {
+  font-size: 14px;
   text-align: justify;
 }
-.Home .projects .proj_content .proj_link {
-  font-size: 12px;
+.Home .projects .proj_link {
+  font-size: 14px;
   font-weight: 700;
-  margin: 5px auto 0 0;
+  position: absolute;
+  bottom: 10px;
   text-decoration: none;
-  color: #44888b;
+  color: var(--teal-green);
 }
 .Home .projects .proj_img {
+  width: 40%;
+  margin: 10px;
+  float: right;
   display: flex;
   align-items: center;
 }
 .Home .projects img {
-  margin: auto auto;
-  width: 120px;
+  margin: 0 auto;
   padding: 50px 10px;
   background-image: url(../images/gray_diamond.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
+/* ====== 4 feature ====== */
 .Home .feature {
   margin-top: 40px;
+  padding: 0 10%;
 }
 .Home .feature h3 {
+  font-size: 18px;
   text-align: center;
+  color: var(--dark-gray);
 }
 .Home .feature .fea_content {
-  margin: 20px auto;
+  margin: 40px auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 .Home .feature .fea_content > * {
-  width: 410px;
+  width: 400px;
   height: 250px;
 }
 .Home .feature .fea_img {
@@ -152,7 +153,7 @@
 }
 .Home .feature h4 {
   text-align: center;
-  color: #44888b;
+  color: var(--teal-green);
   font-size: 20px;
   margin: 10px 0;
 }
@@ -161,66 +162,69 @@
   font-size: 16px;
   margin: 10px 0;
 }
+/* ====== 5 roles ====== */
 .Home .roles {
-  padding: 40px;
+  padding: 20px;
   background-image: linear-gradient(#000a, #000a), url(../images/bg_role.png);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 .Home .roles h3 {
-  width: 1000px;
-  margin-top: 20px;
+  width: 100%;
   text-align: center;
   font-size: 24px;
   font-weight: 600;
   color: white;
 }
 .Home .roles > div {
-  height: 360px;
-  width: 480px;
+  height: 380px;
+  width: 470px;
   margin: 20px;
   border-radius: 5px;
   overflow: hidden;
   background-image: url(../images/role_text_bg.png);
   background-size: cover;
-  color: #ddd;
+  color: var(--light-gray);
 }
 .Home .roles img {
   max-width: 480px;
 }
 .Home .roles h5 {
   margin: 10px 20px;
+  font-size: 16px;
 }
 .Home .roles p {
   margin: 10px 20px;
-  font-size: 13px;
+  font-size: 14px;
 }
+/* ====== 6 goals ====== */
 .Home .goals {
-  padding: 20px 40px;
+  padding: 20px 0;
   display: flex;
   justify-content: space-evenly;
 }
-.Home .goals > img {
-  max-width: 400px;
-  max-height: 400px;
+.Home .goals img {
+  width: 30%;
+  height: auto;
 }
 .Home .goals .goal_content {
-  max-width: 600px;
+  width: 55%;
 }
 .Home .goals p {
-  font-size: 14px;
-  margin: 40px 20px;
+  font-size: 16px;
+  margin: 30px 20px;
 }
 .Home .goals :first-child {
-  font-size: 15px;
   font-weight: 700;
 }
 .Home .goals .goal_content img {
+  margin-left: 20px;
+  max-height: 35px;
+  width: auto;
   display: inline-block;
-  max-height: 39px;
-  margin: 20px;
 }
+/* ====== 7 contact info ====== */
 .Home .contactinfo {
   margin: 20px, auto;
   padding: 40px;
@@ -229,23 +233,23 @@
   justify-content: right;
 }
 .Home .contactinfo .contact_import {
-  width: 500px;
+  width: 50%;
 }
 .Home .contactinfo .contact_list {
-  width: 300px;
+  width: 25%;
   margin: 40px auto;
   color: white;
 }
 .Home .contact_list h5 {
-  margin: 35px 0 10px;
+  margin-top: 36px;
+  font-size: 14px;
 }
 .Home .contact_list p {
-  margin: 0 0 10px;
-  padding-left: 20px;
-  font-size: 12px;
+  padding-left: 25px;
+  font-size: 14px;
 }
 .Home .contact_list p {
-  background-size: 15px;
+  background-size: 20px;
   background-position: top left;
   background-repeat: no-repeat;
 }

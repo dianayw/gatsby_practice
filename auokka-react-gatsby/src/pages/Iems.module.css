@@ -1,25 +1,28 @@
 .iems {
+  max-width: var(--desktop-max-width);
   margin: 0 auto;
-  max-width: 1200px;
 }
+/* ====== 1 iems brief ====== */
 .iems .iems_brief {
   margin: 60px 10px 60px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .iems .iems_brief .iems_content {
-  width: 500px;
+  width: 50%;
   margin: 0 10px;
 }
 .iems .iems_brief h3 {
   font-size: 24px;
+  color: var(--dark-gray);
 }
 .iems .iems_brief p {
   font-size: 14px;
   text-align: justify;
 }
 .iems .iems_brief .iems_text_bg {
-  width: 400px;
+  width: 45%;
+  min-height: 350px;
   overflow: hidden;
   background-image: url(../images/iems_txt_bg.png);
   background-size: 80%;
@@ -33,23 +36,25 @@
   top: 20%;
   right: 0;
 }
+/* ====== 2 platform features ====== */
 .iems .iems_feature {
   margin: 60px 0 20px;
+  padding: 0 10%;
 }
 .iems .iems_feature h3 {
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
-  color: #555;
+  color: var(--dark-gray);
 }
 .iems .iems_feature .iems_fea_content {
-  margin: 20px 100px;
+  margin: 40px auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 .iems .iems_feature .iems_fea_content > * {
-  width: 410px;
-  height: 220px;
+  width: 400px;
+  height: 250px;
 }
 .iems .iems_feature .iems_fea_img {
   height: 100px;
@@ -71,22 +76,23 @@
 }
 .iems .iems_feature h4 {
   text-align: center;
-  color: #44888b;
-  font-size: 16px;
+  color: var(--teal-green);
+  font-size: 20px;
   margin: 10px 0;
 }
 .iems .iems_feature p {
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
   margin: 10px 0;
 }
+/* ====== 3 research background ====== */
 .iems .research_background {
   margin: 60px 80px;
 }
 .iems .research_background h3 {
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
-  color: #555;
+  color: var(--dark-gray);
 }
 .iems .research_background p {
   text-align: center;

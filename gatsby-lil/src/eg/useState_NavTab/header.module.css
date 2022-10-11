@@ -5,6 +5,7 @@ header {
   display: flex;
   justify-content: space-between;
 }
+
 /* ====== left: logo and navigation ====== */
 header .left {
   width: 40%;
@@ -13,9 +14,11 @@ header .left {
   align-items: center;
   position: relative;
 }
+
 header .logo {
   width: 80px;
 }
+
 header .tab {
   display: inline-block;
   padding: 18px;
@@ -25,18 +28,11 @@ header .tab {
   color: var(--dark-gray);
   white-space: nowrap;
 }
-header .tabActived {
-  display: inline-block;
-  padding: 18px;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--teal-green);
-  white-space: nowrap;
-}
+
 header .tab:hover {
   background-color: var(--light-gray);
 }
+
 /* ====== right: demo and sign in ====== */
 header .right {
   width: 26%;
@@ -44,6 +40,7 @@ header .right {
   justify-content: space-between;
   align-items: center;
 }
+
 header .demo {
   height: 50px;
   width: 120px;
@@ -53,6 +50,7 @@ header .demo {
   align-items: center;
   justify-content: center;
 }
+
 header .demo .btn {
   padding: 15px 5px;
   color: var(--teal-green);
@@ -62,17 +60,20 @@ header .demo .btn {
   text-align: center;
   white-space: nowrap;
 }
+
 header .account {
-  width: 160px;
+  width: 150px;
   padding: 10px 0;
   font-size: 14px;
   line-height: 18px;
   font-weight: 600;
 }
+
 header .account .icon {
   height: 20px;
   margin: 5px;
 }
+
 header .account .link {
   padding: 4px;
   display: inline-block;
@@ -80,7 +81,8 @@ header .account .link {
   color: black;
   white-space: nowrap;
 }
-/* ====== hover extra tabs ====== */
+
+/* ====== hover extra bar ====== */
 header .left .extra_bar {
   width: var(--desktop-max-width);
   height: 40px;
@@ -93,40 +95,18 @@ header .left .extra_bar {
   display: flex;
   align-items: center;
 }
+
 header .left .extra_bar :first-child {
   margin-left: 335px;
 }
-header .left .extraTab {
+
+header .left .extra_tab {
   display: inline-block;
   padding: 10px;
   margin-right: 20px;
   font-size: 16px;
   text-decoration: none;
   color: var(--dark-gray);
+  font-family: Arial;
   font-weight: 600;
-}
-header .left .extraTabActived {
-  display: inline-block;
-  padding: 10px;
-  margin-right: 20px;
-  font-size: 16px;
-  text-decoration: none;
-  color: var(--teal-green);
-  font-weight: 600;
-}
-/* ====== account pop up window ====== */
-header .popUp {
-  position: fixed;
-  left: 50%;
-  top: 45%;
-  transform: translate(-50%, -50%);
-  z-index: 10;
-}
-header .popUp > button {
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  float: right;
-  top: 15px;
-  right: 15px;
 }

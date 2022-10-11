@@ -1,61 +1,69 @@
 import * as React from "react";
 import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 import * as styles from "./footer.module.css";
-import auokkaLogo from "../images/Auokka_logo.png";
-import iconMail from "../images/icon_mail.png";
-import iconFacebook from "../images/icon_facebook.png";
-import iconPhone from "../images/icon_phone.png";
-import iconComputer from "../images/icon_computer.png"
-
 
 const Footer = () => {
   return (
     <footer>
       <div className={styles.section}>
+        {/* ====== left: logo ====== */}
         <div className={styles.left}>
-          <img className={styles.logo} src={auokkaLogo} alt="logo_image"/>
+          <StaticImage
+            className={styles.logo}
+            src="../images/auokka_logo_256.png"
+            alt="logo_image"
+          />
         </div>
+        {/* ====== middle: navigation ====== */}
         <div className={styles.middle}>
           <div className={styles.heading}>MENU</div>
           <div className={styles.links}>
-            <Link className={styles.link} to="./index">
-              Home
-            </Link> 
-            <Link className={styles.link} to="./about">
-              About Us
-            </Link> 
-            <Link className={styles.link} to="./contact">
-              Contact Us
-            </Link> 
-            <Link className={styles.link} to="./products">
-              Auokka
-            </Link> 
-            <Link className={styles.link} to="./iems">
-              Iems
-            </Link> 
+            <Link to="/">Home</Link>
+            <Link to="/about">About Us</Link>
+            <Link to="/products">Auokka</Link>
+            <Link to="/iems">Iems</Link>
+            <Link to="/contact">Contact Us</Link>
           </div>
         </div>
+        {/* ====== right: contact link ====== */}
         <div className={styles.right}>
           <div className={styles.heading}>CONTACT US</div>
-          <button onClick={() => window.location = 'mailto:info@auokka.com'}>
-            <img src={iconMail} alt="mail_icon"/>
-          </button> 
+          <button onClick={() => (window.location = "mailto:info@auokka.com")}>
+            <StaticImage
+              className={styles.icon}
+              src="../images/icon_mail.png"
+              alt="mail_icon"
+            />
+          </button>
           <Link to="">
-            <img src={iconFacebook} alt="facebook_icon"/>
-          </Link> 
+            <StaticImage
+              className={styles.icon}
+              src="../images/icon_facebook.png"
+              alt="facebook_icon"
+            />
+          </Link>
           <Link to="">
-            <img src={iconPhone} alt="phone_icon"/>
-          </Link> 
+            <StaticImage
+              className={styles.icon}
+              src="../images/icon_phone.png"
+              alt="phone_icon"
+            />
+          </Link>
           <Link to="">
-            <img src={iconComputer} alt="computer_icon"/>
-          </Link> 
+            <StaticImage
+              className={styles.icon}
+              src="../images/icon_computer.png"
+              alt="computer_icon"
+            />
+          </Link>
         </div>
       </div>
       <div className={styles.line}>
-        <span>©Auokka.com</span>
+        <span>©Auokka.com {new Date().getFullYear()}</span>
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;

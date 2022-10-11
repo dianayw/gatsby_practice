@@ -1,6 +1,6 @@
 :root {
   /* font-family */
-  --en-font: "Arial", sans-serif;
+  --en-font: Arial, Helvetica, sans-serif;;
   --zh-font: "Microsoft YaHei";
 
   /* --primary-font: "Amstelvar", serif;
@@ -22,6 +22,7 @@
   --main-bg-dark: hsl(183, 42%, var(--mod-dark)); */
 
   /* Sizes and widths */
+  --desktop-max-width: 1440px;
   /* --content-w-wide: 80rem;
   --content-w-regular: 60rem;
   --content-w-narrow: 70ch; */

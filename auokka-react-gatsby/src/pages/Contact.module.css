@@ -1,14 +1,15 @@
 .Contact {
+  max-width: var(--desktop-max-width);
   margin: 0 auto;
-  max-width: 1200px;
 }
+/* ====== 1 google map ====== */
 .Contact .map {
   height: 600px;
 }
 .Contact .map h3 {
   text-align: center;
   font-size: 16px;
-  color: #555;
+  color: var(--dark-gray);
 }
 .Contact .map > div {
   height: 500px;
@@ -23,6 +24,7 @@
   left: 483px;
   top: 192px;
 }
+/* ====== 2 contact details ====== */
 .Contact .contactdetails {
   margin: 40px 100px;
   display: flex;
@@ -35,15 +37,15 @@
   margin-bottom: 5px;
   padding-top: 40px;
   text-align: center;
-  font-size: 14px;
-  color: #555;
+  font-size: 16px;
+  color: var(--dark-gray);
   background-position: top;
   background-repeat: no-repeat;
 }
 .Contact .contactdetails p {
   margin-top: 0;
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
 }
 .Contact .contactdetails div:nth-child(1) h5 {
   background-image: url(../images/green_mail.png);

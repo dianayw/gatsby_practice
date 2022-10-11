@@ -1,70 +1,65 @@
 footer {
-            
-    background-color: var(--dark-gray);
-    height: 220px; 
+  background-color: var(--dark-gray);
+  height: 200px;
 }
 footer .section {
-    max-width: 1200px;
-    margin: 0 auto;
-    height: 200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  max-width: var(--desktop-max-width);
+  margin: 0 auto;
+  height: 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+/* ====== left: logo ====== */
 footer .left {
-    height: 100px;
-    width: 100px;
-    margin: 20px;
-    border-radius: 8px;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  max-height: 100px;
+  max-width: 100px;
+  margin: 20px;
 }
 footer .logo {
-    height: 70px;
+  height: 100%;
+  border-radius: 10px;
 }
 footer .heading {
-    height: 15px;
-    padding: 15px;
-    color:white;
-    font-family: Arial;
-    font-size: 14px;
-    font-weight: 600;
+  height: 45px;
+  padding: 15px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
 }
+/* ====== middle: navigation ====== */
 footer .middle {
-    width: 30%;
+  width: 30%;
 }
-footer .links{
-    height: 135px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+footer .links {
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 footer .links a {
-    width: 70px;
-    height: 15px;
-    padding: 5px;
-    margin: 10px;
-    font-size: 14px;
-    text-decoration: none;
-    color:white;
+  width: 80px;
+  height: 25px;
+  padding: 5px;
+  margin: 10px;
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
 }
+/* ====== right: contact link ====== */
 footer .right {
-    width: 30%;
+  width: 30%;
 }
-footer .right img{
-    height: 30px;
-    padding: 5px;
-    margin-left: 10px;
+footer .right .icon {
+  height: 30px;
+  width: 30px;
+  margin: 10px;
 }
-footer .right button{
-/* todo */
-}
-footer .line{
-    height: 20px;
-    text-align: center;
-    font-family: Arial;
-    font-weight: 600;
-    font-size: 12px;
+/* ====== bottom copyright info ====== */
+footer .line {
+  height: 20px;
+  text-align: center;
+  font-family: Arial;
+  font-weight: 600;
+  font-size: 12px;
 }

@@ -1,47 +1,105 @@
 import * as React from "react";
 import { Link } from "gatsby";
-import * as styles from './header.module.css';
-import logo from '../images/Auokka_logo.png';
-import accountDefault from '../images/account_default.png';
-import { useState } from 'react';
+import { StaticImage } from "gatsby-plugin-image";
+import { useState } from "react";
+import * as styles from "./header.module.css";
+import Login from "./login";
+import Signup from "./signup";
+import logo from "../images/auokka_logo_256.png";
+import crossIcon from "../images/cross_icon.png";
 
 const Header = () => {
-  const [extraTab, setExtraTab] = useState(false);
+  // extra navigation bar under Products
+  const [extraNav, setExtraTab] = useState(false);
   const headerTabExpand = () => {
     setExtraTab(true);
-  }
+  };
   const headerTabHide = () => {
     setExtraTab(false);
-  }
-  console.log("console.log header: ", styles.logo)
+  };
+  // show current tab in different color
+  // React.useEffect(() => {
+  //   console.log(window.location.pathname);
+  // }, []);
+  // sign up and log in pop up window
+  const [loginWindow, setLoginWindow] = useState(false);
+  const [signupWindow, setSignupWindow] = useState(false);
+  // header content
   return (
-    <header className={styles.Header} onMouseLeave={() => headerTabHide()}>
+    <header>
+      {/* ====== left: logo and navigation ====== */}
       <div className={styles.left}>
         <img className={styles.logo} src={logo} alt="logo_image" />
-        <Link className={styles.tab} to="./index">
-          HOME
+        <Link
+          className={
+            window.location.pathname === "/" ? styles.tabActived : styles.tab
+          }
+          to="/"
+        >
+          Home
         </Link>
-        <Link className={styles.tab} to="./about">
+        <Link
+          className={
+            window.location.pathname.includes("about")
+              ? styles.tabActived
+              : styles.tab
+          }
+          to="/about"
+        >
           About Us
         </Link>
-        <Link className={styles.tab} to="./products"
-          onMouseOver={() => headerTabExpand()}>
+        <Link
+          className={
+            window.location.pathname.includes("products") ||
+            window.location.pathname.includes("iems")
+              ? styles.tabActived
+              : styles.tab
+          }
+          to="/products"
+          onMouseOver={headerTabExpand}
+        >
           Products
         </Link>
-        <Link className={styles.tab} to="./contact">
+        <Link
+          className={
+            window.location.pathname.includes("contact")
+              ? styles.tabActived
+              : styles.tab
+          }
+          to="/contact"
+        >
           Contact Us
         </Link>
-        {extraTab && (
-          <div className={styles.extra_bar}>
-            <Link className={styles.extra_tab} to="./products">
+        {/* ====== hover extra bar ====== */}
+        {extraNav && (
+          <div
+            className={styles.extra_bar}
+            onMouseLeave={() => headerTabHide()}
+          >
+            <Link
+              className={
+                window.location.pathname.includes("products")
+                  ? styles.extraTabActived
+                  : styles.extraTab
+              }
+              to="/products"
+            >
               Auokka
             </Link>
-            <Link className={styles.extra_tab} to="./iems">
+            <Link
+              className={
+                window.location.pathname.includes("iems")
+                  ? styles.extraTabActived
+                  : styles.extraTab
+              }
+              to="/iems"
+            >
               IEMS
             </Link>
           </div>
         )}
       </div>
+      {/* ====== right: demo and sign in ====== */}
       <div className={styles.right}>
         <div className={styles.demo}>
           <Link className={styles.btn} to="/Contact">
@@ -49,22 +107,56 @@ const Header = () => {
           </Link>
         </div>
         <div className={styles.account}>
-          <img
+          <StaticImage
             className={styles.icon}
-            src={accountDefault}
+            src="../images/account_default.png"
             alt="account default icon"
           />
-          <Link className={styles.link} to="">
+          <button
+            className={styles.link}
+            onClick={() => {
+              setLoginWindow(true);
+            }}
+          >
             Log in
-          </Link>
+          </button>
           <span>/</span>
-          <Link className={styles.link} to="">
+          <button
+            className={styles.link}
+            onClick={() => {
+              setSignupWindow(true);
+            }}
+          >
             Sign up
-          </Link>
+          </button>
         </div>
+        {loginWindow && (
+          <div className={styles.popUp}>
+            <Login />
+            <button
+              onClick={() => {
+                setLoginWindow(false);
+              }}
+            >
+              <img src={crossIcon} alt="" />
+            </button>
+          </div>
+        )}
+        {signupWindow && (
+          <div className={styles.popUp}>
+            <Signup />
+            <button
+              onClick={() => {
+                setLoginWindow(false);
+              }}
+            >
+              <img src={crossIcon} alt="" />
+            </button>
+          </div>
+        )}
       </div>
     </header>
   );
-}
+};
 
 export default Header;
