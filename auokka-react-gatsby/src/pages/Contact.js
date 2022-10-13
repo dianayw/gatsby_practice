@@ -1,7 +1,7 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
 import Layout from "../components/layout";
 import * as styles from "./contact.module.css";
+import Map from "../components/map.js";
 import Form from "../components/form.js";
 
 const ContactPage = () => {
@@ -11,16 +11,7 @@ const ContactPage = () => {
         {/* ====== 1 google map ====== */}
         <section className={styles.map}>
           <h3>Our location is here</h3>
-          <div>
-            <StaticImage
-              src="../images/map_preview.png"
-              alt="google map capture"
-            />
-            <StaticImage
-              src="../images/map_location_icon.png"
-              alt="location icon"
-            />
-          </div>
+          <Map />
         </section>
         {/* ====== 2 contact details ====== */}
         <section className={styles.contactdetails}>

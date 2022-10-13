@@ -1,38 +1,27 @@
-// import * as React from "react";
-// import { useRef } from "react";
-// import * as styles from "./signup.module.css";
-// import logo from "../images/auokka_logo_256.png";
+import { useEffect, useState, useRef } from "react";
+import GoogleMapsApiLoader from "@googlemaps/js-api-loader";
 
-// const Signup = () => {
-//   const inputUsername = useRef();
-//   const inputPassword = useRef();
-//   const submit = (e) => {
-//     e.preventDefault();
-//     const username = inputUsername.current.value;
-//     const password = inputPassword.current.value;
-//     alert(`Name: ${username}\nPhone: ${password}`);
-//     inputUsername.current.value = "";
-//     inputPassword.current.value = "";
-//   };
-//   return (
-//     <div className={styles.signup}>
-//       <form className={styles.popUp} onSubmit={submit}>
-//         <img src={logo} />
-//         <h2>SIGN UP</h2>
-//         <div>
-//           <label htmlFor="username">Username</label>
-//           <input type="text" id="username" ref={inputUsername} />
-//         </div>
-//         <div>
-//           <label htmlFor="password">Password</label>
-//           <input type="password" id="password" ref={inputPassword} />
-//         </div>
-//         <div>
-//           <button>Sign up</button>
-//         </div>
-//       </form>
-//     </div>
-//   );
-// };
+const apiKey = "AIzaSyCVBthtEmWi0Ul8mejDQrBlOULXB1kTB3I";
 
-// export default Signup;
+const eventsMapping = {
+  onCenterChanged: ["center_changed", map => map.getCenter()],
+  onBoundsChangerd: ["bounds_changed", map => map.getBounds()]
+};
+
+export default function useGoogleMap({ zoom, center, events }) {
+  const [mapState, setMapState] = useState({ loading: true });
+  const mapRef = useRef();
+  useEffect(() => {
+    GoogleMapsApiLoader({ apiKey }).then(google => {
+      const map = new google.maps.Map(mapRef.current, { zoom, center });
+      Object.keys(events).forEach(eventName =>
+        map.addListener(eventsMapping[eventName][0], () =>
+          events[eventName](eventsMapping[eventName][1](map))
+        )
+      );
+
+      setMapState({ maps: google.maps, map, loading: false });
+    });
+  }, []);
+  return { mapRef, ...mapState };
+}

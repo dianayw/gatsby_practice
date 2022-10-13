@@ -4,25 +4,12 @@
 }
 /* ====== 1 google map ====== */
 .Contact .map {
-  height: 600px;
+  height: 100%;
 }
 .Contact .map h3 {
   text-align: center;
   font-size: 16px;
   color: var(--dark-gray);
-}
-.Contact .map > div {
-  height: 500px;
-  position: relative;
-}
-.Contact .map div > :first-child {
-  width: 100%;
-}
-.Contact .map div > :last-child {
-  width: 90px;
-  position: absolute;
-  left: 483px;
-  top: 192px;
 }
 /* ====== 2 contact details ====== */
 .Contact .contactdetails {

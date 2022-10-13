@@ -16,7 +16,7 @@ const Login = () => {
   };
   return (
     <form className={styles.login} onSubmit={submit}>
-      <img src={logo} />
+      <img src={logo} alt="" />
       <h2>LOG IN</h2>
       <div>
         <label htmlFor="username">Username</label>

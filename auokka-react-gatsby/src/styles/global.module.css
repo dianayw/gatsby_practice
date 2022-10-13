@@ -2,10 +2,6 @@
   /* font-family */
   --en-font: Arial, Helvetica, sans-serif;;
   --zh-font: "Microsoft YaHei";
-
-  /* --primary-font: "Amstelvar", serif;
-  --highlight-font: "Recursive", sans-serif;
-  --heading-size: 2.6rem; */
   
   /* color */
   --dark-gray: #444;
@@ -23,6 +19,9 @@
 
   /* Sizes and widths */
   --desktop-max-width: 1440px;
+  --p-normal-font: 16px;
+  --p-small-font: 12px;
+  --h3-
   /* --content-w-wide: 80rem;
   --content-w-regular: 60rem;
   --content-w-narrow: 70ch; */

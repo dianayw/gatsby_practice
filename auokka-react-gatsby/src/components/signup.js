@@ -16,7 +16,7 @@ const Signup = () => {
   };
   return (
     <form className={styles.signup} onSubmit={submit}>
-      <img src={logo} />
+      <img src={logo} alt="" />
       <h2>SIGN UP</h2>
       <div>
         <label htmlFor="username">Username</label>
