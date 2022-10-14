@@ -1,28 +1,26 @@
 :root {
   /* font-family */
-  --en-font: Arial, Helvetica, sans-serif;;
+  --en-font: Arial, Helvetica, sans-serif;
   --zh-font: "Microsoft YaHei";
-  
+
   /* color */
   --dark-gray: #444;
   --light-gray: #ddd;
-  --grass-green:#91c151;
-  --teal-green:#44888B;
-
-  /* --rich-black: hsl(210, 50%, 1%);
-  --mod-light: 90%;
-  --mod-medium: 50%;
-  --mod-dark: 20%;
-  --main-bg-light: hsl(183, 42%, var(--mod-light));
-  --main-bg-medium: hsl(183, 42%, var(--mod-medium));
-  --main-bg-dark: hsl(183, 42%, var(--mod-dark)); */
+  --grass-green: #91c151;
+  --teal-green: #44888b;
 
   /* Sizes and widths */
   --desktop-max-width: 1440px;
-  --p-normal-font: 16px;
-  --p-small-font: 12px;
-  --h3-
-  /* --content-w-wide: 80rem;
-  --content-w-regular: 60rem;
-  --content-w-narrow: 70ch; */
+  --h5-small-font: 16px;
+  --p-small-font: 14px;
+}
+
+/* responsive design for mobile devices */
+@media screen and (max-width: 640px) {
+  :root {
+    /* Sizes and widths */
+    /* --desktop-max-width: 1440px; */
+    --h5-small-font: 14px;
+    --p-small-font: 12px;
+  }
 }

@@ -12,12 +12,7 @@
   width: 50%;
   margin: 0 10px;
 }
-.iems .iems_brief h3 {
-  font-size: 24px;
-  color: var(--dark-gray);
-}
 .iems .iems_brief p {
-  font-size: 14px;
   text-align: justify;
 }
 .iems .iems_brief .iems_text_bg {
@@ -42,9 +37,7 @@
   padding: 0 10%;
 }
 .iems .iems_feature h3 {
-  font-size: 18px;
   text-align: center;
-  color: var(--dark-gray);
 }
 .iems .iems_feature .iems_fea_content {
   margin: 40px auto;
@@ -75,14 +68,10 @@
   background-image: url(../images/fea_icon_12.png);
 }
 .iems .iems_feature h4 {
-  text-align: center;
-  color: var(--teal-green);
-  font-size: 20px;
   margin: 10px 0;
 }
 .iems .iems_feature p {
   text-align: center;
-  font-size: 16px;
   margin: 10px 0;
 }
 /* ====== 3 research background ====== */
@@ -90,9 +79,7 @@
   margin: 60px 80px;
 }
 .iems .research_background h3 {
-  font-size: 18px;
   text-align: center;
-  color: var(--dark-gray);
 }
 .iems .research_background p {
   text-align: center;

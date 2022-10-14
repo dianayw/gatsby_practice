@@ -10,7 +10,7 @@
 }
 .Home .cooperator > * {
   width: 5%;
-  margin: 40px 0;
+  margin: 0;
   object-fit: contain;
 }
 .Home .cooperator img {
@@ -25,9 +25,6 @@
 }
 .Home .about_article h3 {
   padding-top: 20px;
-}
-.Home .about_article p {
-  font-size: 16px;
 }
 .Home .about_article .view_btn {
   height: 40px;
@@ -83,15 +80,15 @@
 }
 .Home .projects h5 {
   margin: 10px 0 8px;
-  font-size: 16px;
+  font-size: var(--h5-small-font);
   line-height: 12px;
 }
 .Home .projects aside > p {
-  font-size: 14px;
+  font-size: var(--p-small-font);
   text-align: justify;
 }
 .Home .projects .proj_link {
-  font-size: 14px;
+  font-size: var(--p-small-font);
   font-weight: 700;
   position: absolute;
   bottom: 10px;
@@ -119,7 +116,6 @@
   padding: 0 10%;
 }
 .Home .feature h3 {
-  font-size: 18px;
   text-align: center;
   color: var(--dark-gray);
 }
@@ -152,14 +148,10 @@
   background-image: url(../images/fea_icon_4.png);
 }
 .Home .feature h4 {
-  text-align: center;
-  color: var(--teal-green);
-  font-size: 20px;
   margin: 10px 0;
 }
 .Home .feature p {
   text-align: center;
-  font-size: 16px;
   margin: 10px 0;
 }
 /* ====== 5 roles ====== */
@@ -173,7 +165,6 @@
 .Home .roles h3 {
   width: 100%;
   text-align: center;
-  font-size: 24px;
   font-weight: 600;
   color: white;
 }
@@ -192,11 +183,11 @@
 }
 .Home .roles h5 {
   margin: 10px 20px;
-  font-size: 16px;
+  font-size: var(--h5-small-font);
 }
 .Home .roles p {
   margin: 10px 20px;
-  font-size: 14px;
+  font-size: var(--p-small-font);
 }
 /* ====== 6 goals ====== */
 .Home .goals {
@@ -212,7 +203,6 @@
   width: 55%;
 }
 .Home .goals p {
-  font-size: 16px;
   margin: 30px 20px;
 }
 .Home .goals :first-child {
@@ -227,13 +217,10 @@
 /* ====== 7 contact info ====== */
 .Home .contactinfo {
   margin: 20px, auto;
-  padding: 40px;
+  padding: 20px 3%;
   background-image: url(../images/bg_contactinfo.png);
   display: flex;
   justify-content: right;
-}
-.Home .contactinfo .contact_import {
-  width: 50%;
 }
 .Home .contactinfo .contact_list {
   width: 25%;
@@ -242,11 +229,11 @@
 }
 .Home .contact_list h5 {
   margin-top: 36px;
-  font-size: 14px;
+  font-size: var(--p-small-font);
 }
 .Home .contact_list p {
   padding-left: 25px;
-  font-size: 14px;
+  font-size: var(--p-small-font);
 }
 .Home .contact_list p {
   background-size: 20px;

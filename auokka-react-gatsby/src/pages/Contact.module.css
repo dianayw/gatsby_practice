@@ -8,8 +8,6 @@
 }
 .Contact .map h3 {
   text-align: center;
-  font-size: 16px;
-  color: var(--dark-gray);
 }
 /* ====== 2 contact details ====== */
 .Contact .contactdetails {
@@ -24,7 +22,7 @@
   margin-bottom: 5px;
   padding-top: 40px;
   text-align: center;
-  font-size: 16px;
+  font-size: var(--h5-small-font);
   color: var(--dark-gray);
   background-position: top;
   background-repeat: no-repeat;
@@ -32,7 +30,7 @@
 .Contact .contactdetails p {
   margin-top: 0;
   text-align: center;
-  font-size: 14px;
+  font-size: var(--p-small-font);
 }
 .Contact .contactdetails div:nth-child(1) h5 {
   background-image: url(../images/green_mail.png);

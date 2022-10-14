@@ -12,12 +12,7 @@
   width: 50%;
   margin: 0 10px;
 }
-.products .auokka_brief h3 {
-  font-size: 24px;
-  color: var(--dark-gray);
-}
 .products .auokka_brief p {
-  font-size: 14px;
   text-align: justify;
 }
 .products .auokka_brief .auokka_text_bg {
@@ -42,7 +37,6 @@
   padding: 0 10%;
 }
 .products .auokka_feature h3 {
-  font-size: 18px;
   text-align: center;
   color: var(--dark-gray);
 }
@@ -75,14 +69,10 @@
   background-image: url(../images/fea_icon_8.png);
 }
 .products .auokka_feature h4 {
-  text-align: center;
-  color: var(--teal-green);
-  font-size: 20px;
   margin: 10px 0;
 }
 .products .auokka_feature p {
   text-align: center;
-  font-size: 16px;
   margin: 10px 0;
 }
 /* ====== 3 function display ====== */
@@ -90,7 +80,6 @@
   margin: 60px 0;
 }
 .products .function_display h3 {
-  font-size: 18px;
   text-align: center;
   color: var(--dark-gray);
 }
@@ -101,8 +90,8 @@
   justify-content: space-evenly;
 }
 .products .function_display .func_content > * {
-  width: 300px;
-  height: 480px;
+  width: 320px;
+  height: 500px;
   border-radius: 5px;
   box-shadow: 0px 0px 8px 3px #ddd;
   position: relative;
@@ -111,7 +100,6 @@
   margin: 0;
   padding-top: 70px;
   text-align: center;
-  font-size: 18px;
   color: var(--dark-gray);
   position: relative;
   top: -15px;
@@ -129,7 +117,7 @@
   background-image: url(../images/func_icon_3.png);
 }
 .products .function_display p {
-  font-size: 12px;
+  font-size: var(--p-small-font);
   font-weight: 600;
   line-height: 24px;
   color: var(--dark-gray);
@@ -151,7 +139,7 @@
   left: 75px;
   background-image: url("../images/green_grad_bg.png");
   background-size: 100% 100%;
-  font-size: 12px;
+  font-size: var(--p-small-font);
   font-weight: 600;
   text-align: center;
   color: white;

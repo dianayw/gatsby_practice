@@ -23,7 +23,7 @@ const Form = () => {
   };
   return (
     <form className={styles.form} onSubmit={submit}>
-      <h3>Contact Us</h3>
+      <h2>Contact Us</h2>
       <h5>Please fill in your contact information</h5>
       <div className={styles.twoColumn}>
         <label htmlFor="name">Name</label>

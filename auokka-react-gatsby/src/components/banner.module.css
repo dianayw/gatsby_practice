@@ -4,8 +4,8 @@
   position: relative;
 }
 /* ====== background image ====== */
-.banner StaticImage {
-  width: var(--desktop-max-width);
+.banner img {
+  object-fit: contain;
 }
 /* ====== left: text ====== */
 .banner .content {
@@ -39,7 +39,6 @@
 
 .banner .p3 {
   margin: 0 auto 5%;
-  border: 1px black;
 }
 
 .banner .btn {
@@ -66,4 +65,46 @@
 .banner .bars {
   width: 20%;
   margin: 0 40%;
+}
+/* responsive design for tablet devices */
+@media screen and (max-width: 1023px) and (min-width: 641px) {
+  .banner {
+    padding-top: 50px;
+  }
+  .banner .content {
+    padding-top: 50px;
+  }
+  .banner .p1 {
+    font-size: 18px;
+  }
+  .banner .p2 {
+    font-size: 16px;
+  }
+}
+/* responsive design for mobile devices */
+@media screen and (max-width: 640px) {
+  .banner {
+    padding-top: 50px;
+    height: 400px;
+  }
+  .banner img {
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+    /* object-position: top left; */
+  }
+  .banner .content {
+    width: 340px;
+    padding-top: 50px;
+  }
+  .banner .p1 {
+    font-size: 16px;
+  }
+  .banner .p2 {
+    font-size: 14px;
+  }
+  .banner .btn {
+    font-size: 12px;
+    line-height: 20px;
+  }
 }

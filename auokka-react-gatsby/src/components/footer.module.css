@@ -12,22 +12,21 @@ footer .section {
 }
 /* ====== left: logo ====== */
 footer .left {
-  max-height: 100px;
-  max-width: 100px;
-  margin: 20px;
+  width: 100px;
+  margin: 0 5%;
 }
 footer .logo {
-  height: 100%;
+  object-fit: contain;
   border-radius: 10px;
 }
+/* ====== middle: navigation ====== */
 footer .heading {
   height: 45px;
-  padding: 15px;
+  padding: 15px 8px;
   color: white;
   font-size: 14px;
   font-weight: 600;
 }
-/* ====== middle: navigation ====== */
 footer .middle {
   width: 30%;
 }
@@ -41,7 +40,7 @@ footer .links a {
   width: 80px;
   height: 25px;
   padding: 5px;
-  margin: 10px;
+  margin: 10px 5px;
   font-size: 14px;
   text-decoration: none;
   color: white;
@@ -59,7 +58,42 @@ footer .right .icon {
 footer .line {
   height: 20px;
   text-align: center;
-  font-family: Arial;
   font-weight: 600;
   font-size: 12px;
+  color: var(--light-gray);
+}
+/* responsive design for tablet devices */
+@media screen and (max-width: 1023px) and (min-width: 641px) {
+  footer .middle {
+    width: 45%;
+    margin: 0 10px;
+  } 
+}
+/* responsive design for mobile devices */
+@media screen and (max-width: 640px) {
+  footer {
+    background-color: var(--dark-gray);
+    height: 400px;
+  }
+  footer .section {
+    height: 380px;
+    flex-direction: column;
+    justify-content: unset;
+    align-items: left;
+  }
+  footer .left {
+    height: 80px;
+    width: 80%;
+    margin: 20px 0 10px;
+  }
+  footer .logo {
+    width: 80px;
+  }
+  footer .middle {
+    width: 80%;
+  }
+  footer .right {
+    width: 80%;
+    margin: 5px 0;
+  }
 }

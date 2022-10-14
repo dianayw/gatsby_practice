@@ -23,11 +23,7 @@
 }
 .About .company_profile .profile_content {
   max-width: 45%;
-  padding: 20px 0;
-}
-.About .company_profile h3 {
-  font-size: 24px;
-  color: var(--dark-gray);
+  padding: 20px 5px;
 }
 .About .company_profile p {
   text-align: justify;
@@ -38,12 +34,12 @@
 }
 .About .company_more p {
   margin: 20px 0;
-  font-size: 16px;
+  padding: 0 5px;
 }
 .About .company_more span {
   font-size: 18px;
   font-weight: 700;
-  color: #555;
+  color: var(--dark-gray);
 }
 /* ====== 3 feature ====== */
 .About .feature {
@@ -51,9 +47,7 @@
   padding: 0 10%;
 }
 .About .feature h3 {
-  font-size: 18px;
   text-align: center;
-  color: var(--dark-gray);
 }
 .About .feature .fea_content {
   margin: 40px auto;
@@ -84,14 +78,10 @@
   background-image: url(../images/fea_icon_4.png);
 }
 .About .feature h4 {
-  text-align: center;
-  color: var(--teal-green);
-  font-size: 20px;
   margin: 10px 0;
 }
 .About .feature p {
   text-align: center;
-  font-size: 16px;
   margin: 10px 0;
 }
 /* ====== 4 roles ====== */
@@ -105,7 +95,6 @@
 .About .roles h3 {
   width: 100%;
   text-align: center;
-  font-size: 24px;
   font-weight: 600;
   color: white;
 }
@@ -124,11 +113,11 @@
 }
 .About .roles h5 {
   margin: 10px 20px;
-  font-size: 16px;
+  font-size: var(--h5-small-font);
 }
 .About .roles p {
   margin: 10px 20px;
-  font-size: 14px;
+  font-size: var(--p-small-font);
 }
 /* ====== 5 office photo ====== */
 .About .company_office {

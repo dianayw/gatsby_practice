@@ -4,6 +4,11 @@ header {
   height: 60px;
   display: flex;
   justify-content: space-between;
+  position: relative;
+}
+header .navIcon,
+header .resLogo {
+  display: none;
 }
 /* ====== left: logo and navigation ====== */
 header .left {
@@ -13,10 +18,10 @@ header .left {
   align-items: center;
   position: relative;
 }
-header .logo {
+header .left .logo {
   width: 80px;
 }
-header .tab {
+header .left .tab {
   display: inline-block;
   padding: 18px;
   text-decoration: none;
@@ -25,7 +30,7 @@ header .tab {
   color: var(--dark-gray);
   white-space: nowrap;
 }
-header .tabActived {
+header .left .tabActived {
   display: inline-block;
   padding: 18px;
   text-decoration: none;
@@ -34,7 +39,7 @@ header .tabActived {
   color: var(--teal-green);
   white-space: nowrap;
 }
-header .tab:hover {
+header .left .tab:hover {
   background-color: var(--light-gray);
 }
 /* ====== right: demo and sign in ====== */
@@ -94,7 +99,7 @@ header .left .extra_bar {
   align-items: center;
 }
 header .left .extra_bar :first-child {
-  margin-left: 335px;
+  margin-left: 295px;
 }
 header .left .extraTab {
   display: inline-block;
@@ -129,4 +134,84 @@ header .popUp > button {
   float: right;
   top: 15px;
   right: 15px;
+}
+/* responsive design for mobile and tablet devices */
+@media screen and (max-width : 1023px) {
+  header {
+    max-width:unset;
+    width: 100vw;
+    height: 50px;
+    background-color: var(--teal-green);
+    position: fixed;
+    /* backface-visibility: hidden; */
+    /* -webkit-backface-visibility: hidden; */
+    /* todo */
+    z-index: 5;
+  }
+  header .resLogo {
+    display: unset;
+  }
+  header .left,
+  header .right .demo {
+    display: none;
+  }
+  header .resLogo {
+    display: block;
+    height: 55px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  /* ====== resLeft: navigation tabs ====== */
+  header .resLeft {
+    position: relative;
+  }
+  header .resLeft .navIcon {
+    display: block;
+    padding: 15px;
+    height: 50px;
+    width: 50px;
+  }
+  header .resLeft .resTabs {
+    width: 200px;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  header .resLeft .resTabs > * {
+    display: block;
+    padding: 15px 15px;
+    border-top: 1px solid #888;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    white-space: nowrap;
+    color: white;
+  }
+  header .resLeft .resTabs :nth-child(4),
+  header .resLeft .resTabs :nth-child(5) {
+    padding: 10px 40px;
+  }
+  header .resTab {
+    background-color: var(--dark-gray);
+  }
+  header .resTabActived {
+    background-color: var(--teal-green);
+  }
+  /* ====== right: demo and sign in ====== */
+  header .right {
+    width: 40%;
+    justify-content: right;
+  }
+  header .account {
+    width: unset;
+    line-height: 21px;
+    color:white;
+  }
+  header .account .icon {
+    background-color: white;
+  }
+  header .account .link {
+    color: white;
+  }
 }

@@ -2,6 +2,12 @@ import * as React from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import * as styles from "./footer.module.css";
+import logo from "../images/auokka_logo_256.png";
+// const isMobile = window.matchMedia("(max-width: 640px)").matches
+// isMobile === true ?
+// import * as styles from "./footer.module.css";
+// ,
+// import * as styles from "./footer.module.css";
 
 const Footer = () => {
   return (
@@ -9,11 +15,7 @@ const Footer = () => {
       <div className={styles.section}>
         {/* ====== left: logo ====== */}
         <div className={styles.left}>
-          <StaticImage
-            className={styles.logo}
-            src="../images/auokka_logo_256.png"
-            alt="logo_image"
-          />
+          <img className={styles.logo} src={logo} alt="logo_image" />
         </div>
         {/* ====== middle: navigation ====== */}
         <div className={styles.middle}>

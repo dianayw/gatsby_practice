@@ -28,7 +28,7 @@
 .card p {
   margin: 0;
   padding-right: 30px;
-  font-size: 12px;
+  font-size: var(--p-small-font);
   font-weight: 600;
   background-image: url(../images/white_arrow.png);
   background-size: 15px;

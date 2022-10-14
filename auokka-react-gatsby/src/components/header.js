@@ -5,8 +5,9 @@ import { useState } from "react";
 import * as styles from "./header.module.css";
 import Login from "./login";
 import Signup from "./signup";
-import logo from "../images/auokka_logo_256.png";
+import logo from "../images/auokka_logo_png.png";
 import crossIcon from "../images/cross_icon.png";
+import navIcon from "../images/responsive_nav_icon.png";
 
 const Header = () => {
   // extra navigation bar under Products
@@ -24,7 +25,14 @@ const Header = () => {
   // sign up and log in pop up window
   const [loginWindow, setLoginWindow] = useState(false);
   const [signupWindow, setSignupWindow] = useState(false);
-  // header content
+  // responsive design for mobile devices
+  const [resNav, setResNav] = useState(false);
+  const handleNavIcon = () => {
+    console.log("changing from: ", resNav);
+    setResNav(!resNav);
+  };
+  
+  // ====== header content ======
   return (
     <header>
       {/* ====== left: logo and navigation ====== */}
@@ -99,10 +107,87 @@ const Header = () => {
           </div>
         )}
       </div>
+      {/* ====== resLeft: responsive design ====== */}
+      <div className={styles.resLeft}>
+        <img
+          src={navIcon}
+          alt="navigation_icon"
+          className={styles.navIcon}
+          onClick={handleNavIcon}
+        />
+        {resNav && (
+          <div className={styles.resTabs}>
+            <Link
+              className={
+                window.location.pathname === "/"
+                  ? styles.resTabActived
+                  : styles.resTab
+              }
+              to="/"
+            >
+              Home
+            </Link>
+            <Link
+              className={
+                window.location.pathname.includes("about")
+                  ? styles.resTabActived
+                  : styles.resTab
+              }
+              to="/about"
+            >
+              About Us
+            </Link>
+            <Link
+              className={
+                window.location.pathname.includes("products") ||
+                window.location.pathname.includes("iems")
+                  ? styles.resTabActived
+                  : styles.resTab
+              }
+              to="/products"
+              onMouseOver={headerTabExpand}
+            >
+              Products
+            </Link>
+            <Link
+              className={
+                window.location.pathname.includes("products")
+                  ? styles.resTabActived
+                  : styles.resTab
+              }
+              to="/products"
+            >
+              &nbsp;&nbsp;Auokka
+            </Link>
+            <Link
+              className={
+                window.location.pathname.includes("iems")
+                  ? styles.resTabActived
+                  : styles.resTab
+              }
+              to="/iems"
+            >
+              &nbsp;&nbsp;IEMS
+            </Link>
+            <Link
+              className={
+                window.location.pathname.includes("contact")
+                  ? styles.resTabActived
+                  : styles.resTab
+              }
+              to="/contact"
+            >
+              Contact Us
+            </Link>
+          </div>
+        )}
+      </div>
+
+      <img className={styles.resLogo} src={logo} alt="logo_image" />
       {/* ====== right: demo and sign in ====== */}
       <div className={styles.right}>
         <div className={styles.demo}>
-          <Link className={styles.btn} to="/Contact">
+          <Link className={styles.btn} to="/contact">
             BOOK A DEMO
           </Link>
         </div>

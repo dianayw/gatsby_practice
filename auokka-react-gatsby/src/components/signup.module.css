@@ -11,10 +11,6 @@
 }
 .signup h2 {
   margin: 10px auto 40px;
-  font-size: 28px;
-  font-weight: 800;
-  text-align: center;
-  color: var(--dark-gray);
 }
 .signup > div {
   width: 400px;
@@ -25,7 +21,7 @@
   align-items: center;
 }
 .signup label {
-  font-size: 14px;
+  font-size: var(--p-small-font);
 }
 .signup input {
   height: 100%;
@@ -38,6 +34,52 @@
   border: 1px solid var(--dark-gray);
   border-radius: 3px;
   background-color: var(--light-gray);
-  font-size: 16px;
+  font-weight: 600;
   color: (--dark-gray);
+}
+
+/* responsive design for mobile and tablet devices */
+@media screen and (max-width: 1023px) {
+  .signup {
+    width: 360px;
+    height: 300px;
+    border: 1px solid var(--light-gray);
+    background-color: white;
+    border-radius: 5px;
+  }
+  .signup img {
+    display: inline-block;
+    height: 20%;
+    margin: 5%;
+  }
+  .signup h2 {
+    display: inline-block;
+    vertical-align: top;
+    margin: 10%;
+  }
+  .signup > div {
+    width: 80%;
+    height: 20%;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: unset;
+    align-items: unset;
+  }
+  .signup label {
+    font-size: var(--p-small-font);
+  }
+  .signup input {
+    height: 50%;
+    width: 100%;
+  }
+  .signup button {
+    width: 100%;
+    height: 50%;
+    margin-top: 5%;
+    border: 1px solid var(--dark-gray);
+    border-radius: 3px;
+    background-color: var(--light-gray);
+    font-weight: 600;
+    color: (--dark-gray);
+  }
 }

@@ -93,7 +93,7 @@ const HomePage = () => {
               management. An integrated platform for formative assessment,
               teacher-student feedback and teaching plan assessment.
             </p>
-            <Link className={styles.proj_link} to="Products">
+            <Link className={styles.proj_link} to="/products">
               Find out more
             </Link>
           </aside>
@@ -116,7 +116,7 @@ const HomePage = () => {
               administrators through big data analysis, providing scientific and
               effective data support for teachers' teaching and students.
             </p>
-            <Link className={styles.proj_link} to="/Iems">
+            <Link className={styles.proj_link} to="/iems">
               Find out more
             </Link>
           </aside>
