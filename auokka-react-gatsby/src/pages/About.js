@@ -2,6 +2,7 @@ import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import Layout from "../components/layout";
 import * as styles from "./about.module.css";
+import profilePhoto from "../images/profile_photo.png";
 
 const AboutPage = () => {
   return (
@@ -10,9 +11,9 @@ const AboutPage = () => {
         {/* ====== 1 company profile ====== */}
         <section className={styles.company_profile}>
           <div className={styles.profile_bg}>
-            <StaticImage
+            <img
               className="profile_img"
-              src="../images/profile_photo.png"
+              src={profilePhoto}
               alt="company_photo"
             />
           </div>

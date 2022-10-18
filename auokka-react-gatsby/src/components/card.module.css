@@ -35,3 +35,16 @@
   background-repeat: no-repeat;
   background-position: right;
 }
+/* responsive design for mobile devices */
+@media screen and (max-width: 640px) {
+  .card {
+    height: unset;
+    border-radius: 80px;
+    background-size: 100% 100%;
+    background-position: unset;
+    flex-direction: column;
+  }
+  .card h5 {
+    font-size: 20px;
+  }
+}

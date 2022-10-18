@@ -186,17 +186,17 @@ header .popUp > button {
     font-size: 16px;
     font-weight: 600;
     white-space: nowrap;
-    color: white;
+    background-color: var(--dark-gray);
   }
   header .resLeft .resTabs :nth-child(4),
   header .resLeft .resTabs :nth-child(5) {
     padding: 10px 40px;
   }
   header .resTab {
-    background-color: var(--dark-gray);
+    color: white;
   }
   header .resTabActived {
-    background-color: var(--teal-green);
+    color: var(--teal-green);
   }
   /* ====== right: demo and sign in ====== */
   header .right {

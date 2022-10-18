@@ -1,0 +1,34 @@
+/* Slideshow */
+
+/* .slideshow {
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 1440px;
+}
+.slideshowSlider {
+  white-space: nowrap;
+  transition: ease 1000ms;
+}
+.slide {
+  display: inline-block;
+  height: 600px;
+  width: 100%;
+} */
+
+/* Buttons */
+/* .slideshowBars {
+  text-align: center;
+}
+.slideshowBar {
+  display: inline-block;
+  height: 15px;
+  width: 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 15px 10px 0px;
+  background-color: #c4c4c4;
+}
+
+.slideshowBar.active {
+  width: 120px;
+} */

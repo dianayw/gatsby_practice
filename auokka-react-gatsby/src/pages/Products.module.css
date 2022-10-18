@@ -38,7 +38,6 @@
 }
 .products .auokka_feature h3 {
   text-align: center;
-  color: var(--dark-gray);
 }
 .products .auokka_feature .auo_fea_content {
   margin: 40px auto;
@@ -48,7 +47,8 @@
 }
 .products .auokka_feature .auo_fea_content > * {
   width: 400px;
-  height: 250px;
+  height: unset;
+  margin: 20px 0;
 }
 .products .auokka_feature .auo_fea_img {
   height: 100px;
@@ -81,7 +81,6 @@
 }
 .products .function_display h3 {
   text-align: center;
-  color: var(--dark-gray);
 }
 .products .function_display .func_content {
   margin-bottom: 60px;
@@ -136,11 +135,81 @@
   padding: 20px 10px;
   position: absolute;
   bottom: 0;
-  left: 75px;
+  left: 50%;
+  transform: translate(-50%, 0);
   background-image: url("../images/green_grad_bg.png");
   background-size: 100% 100%;
   font-size: var(--p-small-font);
   font-weight: 600;
   text-align: center;
   color: white;
+}
+/* responsive design for mobile devices */
+@media screen and (max-width: 640px) {
+  /* ====== 1 auokka brief ====== */
+  .products .auokka_brief {
+    margin: 60px 0 40px;
+    display: unset;
+  }
+  .products .auokka_brief .auokka_content {
+    width: unset;
+    padding: 20px 20px;
+  }
+  .products .auokka_brief .auokka_text_bg {
+    width: unset;
+    min-height: unset;
+  }
+  /* ====== 3 function display ====== */
+  .products .function_display .func_content {
+    flex-wrap: wrap;
+    justify-content: left;
+    padding: 0 12px;
+  }
+  .products .function_display .func_content > * {
+    width: 45vw;
+    height: unset;
+    padding-bottom: 100px;
+    margin: 0 3px 60px;
+  }
+  .products .function_display h5 {
+    font-size: var(--h5-small-font);
+  }
+  .products .function_display p {
+    margin: 6px 10px;
+  }
+}
+/* responsive design for tablet devices */
+@media screen and (max-width: 1023px) and (min-width: 641px) {
+  /* ====== 1 auokka brief ====== */
+  .products .auokka_brief {
+    margin: 60px 0 0;
+  }
+  /* ====== 2 platform feature ====== */
+  .products .auokka_feature {
+    margin-top: 0;
+    padding: 0 0;
+  }
+  .products .auokka_feature .auo_fea_content {
+    margin: 0 auto;
+  }
+  .products .auokka_feature .auo_fea_content > * {
+    margin: 10px auto;
+    width: 45vw;
+    height: unset;
+  }
+  /* ====== 3 function display ====== */
+  .products .function_display {
+    margin: 20px 0;
+  }
+  .products .function_display .func_content > * {
+    width: 30vw;
+    height: unset;
+    padding-bottom: 100px;
+  }
+  .products .function_display h5 {
+    font-size: var(--h5-small-font);
+  }
+  .products .function_display p {
+    margin: 6px 10px;
+  }
 }

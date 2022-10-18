@@ -47,7 +47,8 @@
 }
 .iems .iems_feature .iems_fea_content > * {
   width: 400px;
-  height: 250px;
+  height: unset;
+  margin: 20px 0;
 }
 .iems .iems_feature .iems_fea_img {
   height: 100px;
@@ -83,4 +84,47 @@
 }
 .iems .research_background p {
   text-align: center;
+}
+/* responsive design for mobile devices */
+@media screen and (max-width: 640px) {
+  /* ====== 1 iems brief ====== */
+  .iems .iems_brief {
+    margin: 60px 0 40px;
+    display: unset;
+  }
+  .iems .iems_brief .iems_content {
+    width: unset;
+    padding: 20px 20px;
+  }
+  .iems .iems_brief .iems_text_bg {
+    width: unset;
+    min-height: unset;
+  }
+  /* ====== 3 research background ====== */
+  .iems .research_background {
+    margin: 60px 20px;
+  }
+  .iems .research_background p {
+    text-align: justify;
+  }
+}
+/* responsive design for tablet devices */
+@media screen and (max-width: 1023px) and (min-width: 641px) {
+  /* ====== 1 iems brief ====== */
+  .iems .iems_brief {
+    margin: 60px 0 0;
+  }
+  /* ====== 2 platform feature ====== */
+  .iems .iems_feature {
+    margin-top: 0;
+    padding: 0 0;
+  }
+  .iems .iems_feature .iems_fea_content {
+    margin: 0 auto;
+  }
+  .iems .iems_feature .iems_fea_content > * {
+    margin: 10px auto;
+    width: 45vw;
+    height: unset;
+  }
 }

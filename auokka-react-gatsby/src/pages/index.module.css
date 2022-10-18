@@ -4,13 +4,13 @@
 }
 /* ====== 1 cooperator ====== */
 .Home .cooperator {
+  margin: 30px 0;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 .Home .cooperator > * {
-  width: 5%;
-  margin: 0;
+  width: 60px;
   object-fit: contain;
 }
 .Home .cooperator img {
@@ -49,13 +49,12 @@
 }
 /* ====== 3 projects ====== */
 .Home .projects {
-  width: inherit;
-  margin-top: 60px;
+  margin-top: 30px;
   display: flex;
   justify-content: center;
 }
 .Home .projects > * {
-  margin: 20px;
+  margin: 40px 20px 20px;
   border-radius: 10px;
   box-shadow: 0px 0px 8px 3px #ddd;
   width: 40%;
@@ -117,7 +116,6 @@
 }
 .Home .feature h3 {
   text-align: center;
-  color: var(--dark-gray);
 }
 .Home .feature .fea_content {
   margin: 40px auto;
@@ -169,24 +167,24 @@
   color: white;
 }
 .Home .roles > div {
-  height: 380px;
-  width: 470px;
+  width: 440px;
   margin: 20px;
   border-radius: 5px;
   overflow: hidden;
   background-image: url(../images/role_text_bg.png);
   background-size: cover;
+  background-position: bottom;
   color: var(--light-gray);
 }
 .Home .roles img {
-  max-width: 480px;
+  object-fit: contain;
 }
 .Home .roles h5 {
   margin: 10px 20px;
   font-size: var(--h5-small-font);
 }
 .Home .roles p {
-  margin: 10px 20px;
+  margin: 10px 20px 35px;
   font-size: var(--p-small-font);
 }
 /* ====== 6 goals ====== */
@@ -196,20 +194,20 @@
   justify-content: space-evenly;
 }
 .Home .goals img {
-  width: 30%;
-  height: auto;
+  width: 25%;
+  object-fit: contain;
 }
 .Home .goals .goal_content {
   width: 55%;
 }
 .Home .goals p {
-  margin: 30px 20px;
+  margin: 30px 0;
 }
 .Home .goals :first-child {
   font-weight: 700;
 }
 .Home .goals .goal_content img {
-  margin-left: 20px;
+  margin-right: 20px;
   max-height: 35px;
   width: auto;
   display: inline-block;
@@ -217,8 +215,10 @@
 /* ====== 7 contact info ====== */
 .Home .contactinfo {
   margin: 20px, auto;
-  padding: 20px 3%;
+  padding: 40px 3%;
   background-image: url(../images/bg_contactinfo.png);
+  background-size: cover;
+  background-position: bottom right;
   display: flex;
   justify-content: right;
 }
@@ -234,9 +234,7 @@
 .Home .contact_list p {
   padding-left: 25px;
   font-size: var(--p-small-font);
-}
-.Home .contact_list p {
-  background-size: 20px;
+  background-size: 18px;
   background-position: top left;
   background-repeat: no-repeat;
 }
@@ -251,4 +249,95 @@
 }
 .Home .contact_list p:nth-child(8) {
   background-image: url(../images/white_location.png);
+}
+/* responsive design for mobile devices */
+@media screen and (max-width: 640px) {
+  /* ====== 1 cooperator ====== */
+  .Home .cooperator {
+    flex-wrap: wrap;
+  }
+  .Home .cooperator > * {
+    margin: 10px;
+  }
+  /* ====== 2 about article ====== */
+  .Home .about_article {
+    margin: 0 20px;
+    text-align: justify;
+    line-height: unset;
+  }
+  /* ====== 3 projects ====== */
+  .Home .projects {
+    margin-top: 0px;
+    padding-top: 60px;
+    display: unset;
+    justify-content: unset;
+  }
+  .Home .projects > * {
+    width: unset;
+  }
+  /* ====== 6 goals ====== */
+  .Home .goals {
+    display: unset;
+    justify-content: unset;
+  }
+  .Home .goals img {
+    width: 300px;
+    margin: 20px auto;
+  }
+  .Home .goals .goal_content {
+    width: unset;
+    padding: 0 20px;
+  }
+  .Home .goals p {
+    margin: 14px 0;
+  }
+  .Home .goals .goal_content img {
+    margin: 0;
+  }
+  /* ====== 7 contact info ====== */
+  .Home .contactinfo {
+    padding: 0;
+    background-image: none;
+    background-size: unset;
+    background-position: unset;
+    display: unset;
+    justify-content: unset;
+  }
+  .Home .contactinfo .contact_list {
+    width: unset;
+    margin: 0 auto;
+    padding: 20px 40px;
+    background-image: url(../images/bg_contactinfo.png);
+    background-size: cover;
+    background-position: bottom right;
+  }
+  .Home .contactinfo > * {
+    margin: 20px 0 0;
+  }
+  .Home .contact_list h5 {
+    margin-top: 16px;
+  }
+}
+/* responsive design for tablet devices */
+@media screen and (max-width: 1023px) and (min-width: 641px) {
+  /* ====== 4 feature ====== */
+  .Home .feature {
+    margin-top: 40px;
+    padding: 0 0;
+  }
+  .Home .feature .fea_content > * {
+    width: 45vw;
+    height: 250px;
+  }
+  /* ====== 5 roles ====== */
+  .Home .roles {
+    padding: 20px 0;
+  }
+  .Home .roles > div {
+    width: 35vw;
+  }
+  /* ====== 6 goals ====== */
+  .Home .goals p {
+    margin: 14px 0;
+  }
 }

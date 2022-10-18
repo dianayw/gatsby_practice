@@ -1,10 +1,19 @@
 .banner {
   max-width: var(--desktop-max-width);
+  max-height: 600px;
   margin: 0 auto;
+  overflow: hidden;
   position: relative;
 }
 /* ====== background image ====== */
-.banner img {
+.banner .bannerSlider {
+  white-space: nowrap;
+  transition: ease 1000ms;
+  max-height: 600px;
+}
+.banner .slide {
+  display: inline-block;
+  width: 100%;
   object-fit: contain;
 }
 /* ====== left: text ====== */
@@ -14,12 +23,12 @@
   position: absolute;
   top: 0;
   z-index: 1;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
-
 .banner .p1 {
   margin: 5% auto 0;
   color: white;
@@ -27,7 +36,6 @@
   text-align: center;
   white-space: nowrap;
 }
-
 .banner .p2 {
   margin: 0 auto;
   color: white;
@@ -36,11 +44,9 @@
   text-align: center;
   line-height: 40px;
 }
-
 .banner .p3 {
   margin: 0 auto 5%;
 }
-
 .banner .btn {
   padding: 5px;
   border: 2px solid var(--dark-gray);
@@ -51,34 +57,50 @@
   text-decoration: none;
   font-weight: 600;
   text-align: center;
-  line-height: 20px;
 }
-
 /* ====== bottom: bar ====== */
-.banner .bar_set {
-  height: 4%;
-  width: 100%;
+.banner .slideBarSet {
+  height: 8%;
+  width: 40%;
   position: absolute;
   bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+}
+.banner .slideBarSet > * {
+  display: inline-block;
+  margin: 0 1%;
+  padding: 10px;
+  height: 30px;
+}
+.banner .slideBar {
+  width: 40px;
+}
+.banner .slideBarActive {
+  width: 120px;
+}
+.banner .slideBarSet button div {
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0px 0px 8px #0009;
 }
 
-.banner .bars {
-  width: 20%;
-  margin: 0 40%;
-}
 /* responsive design for tablet devices */
 @media screen and (max-width: 1023px) and (min-width: 641px) {
   .banner {
     padding-top: 50px;
   }
-  .banner .content {
-    padding-top: 50px;
-  }
   .banner .p1 {
-    font-size: 18px;
+    font-size: 2vw;
   }
   .banner .p2 {
-    font-size: 16px;
+    font-size: 1.8vw;
+  }
+  .banner .btn {
+    font-size: 1.4vw;
   }
 }
 /* responsive design for mobile devices */
@@ -91,11 +113,6 @@
     height: 100%;
     object-fit: cover;
     object-position: left;
-    /* object-position: top left; */
-  }
-  .banner .content {
-    width: 340px;
-    padding-top: 50px;
   }
   .banner .p1 {
     font-size: 16px;

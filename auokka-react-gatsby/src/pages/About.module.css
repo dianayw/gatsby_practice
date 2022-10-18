@@ -4,22 +4,17 @@
 }
 /* ====== 1 company profile ====== */
 .About .company_profile {
-  margin: 60px 0 40px;
+  margin: 60px 10px 40px;
   display: flex;
   justify-content: space-between;
 }
 .About .company_profile .profile_bg {
   width: 50%;
+  padding: 2% 2% 2% 3%;
   background-image: url(../images/profile_bg.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: right;
-}
-.About .company_profile .profile_img {
-  width: 500px;
-  position: absolute;
-  top: 10%;
-  left: 5%;
 }
 .About .company_profile .profile_content {
   max-width: 45%;
@@ -43,7 +38,7 @@
 }
 /* ====== 3 feature ====== */
 .About .feature {
-  margin-top: 60px;
+  margin-top: 40px;
   padding: 0 10%;
 }
 .About .feature h3 {
@@ -99,24 +94,24 @@
   color: white;
 }
 .About .roles > div {
-  height: 380px;
   width: 470px;
   margin: 20px;
   border-radius: 5px;
   overflow: hidden;
   background-image: url(../images/role_text_bg.png);
   background-size: cover;
+  background-position: bottom;
   color: var(--light-gray);
 }
 .About .roles img {
-  max-width: 480px;
+  object-fit: contain;
 }
 .About .roles h5 {
   margin: 10px 20px;
   font-size: var(--h5-small-font);
 }
 .About .roles p {
-  margin: 10px 20px;
+  margin: 10px 20px 35px;
   font-size: var(--p-small-font);
 }
 /* ====== 5 office photo ====== */
@@ -136,4 +131,78 @@
 .About .company_office img {
   width: 100%;
   border-radius: 20px;
+}
+/* responsive design for mobile devices */
+@media screen and (max-width: 640px) {
+  .About .company_profile {
+    margin: 60px 0 40px;
+    display: unset;
+  }
+  .About .company_profile .profile_bg {
+    width: unset;
+    padding: 6% 6% 6% 9%;
+  }
+  .About .company_profile .profile_content {
+    max-width: unset;
+    padding: 20px 20px;
+  }
+  .About .company_profile p {
+    text-align: justify;
+  }
+  /* ====== 2 more text about company ====== */
+  .About .company_more p {
+    padding: 0 20px;
+    text-align: justify;
+  }
+  /* ====== 5 office photo ====== */
+  .About .company_office {
+    margin: 40px 20px;
+  }
+  .About .company_office > div {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+/* responsive design for tablet devices */
+@media screen and (max-width: 1023px) and (min-width: 641px) {
+  /* ====== 1 company profile ====== */
+  .About .company_profile .profile_bg {
+    width: 45%;
+    padding: 4% 2% 2% 3%;
+    background-size: contain;
+    background-position: top right;
+  }
+  .About .company_profile .profile_content {
+    max-width: 55%;
+    padding: 0 20px 5px 0;
+  }
+  /* ====== 2 more text about company ====== */
+  .About .company_more p {
+    padding: 0 20px;
+    text-align: justify;
+  }
+  /* ====== 3 feature ====== */
+  .About .feature {
+    margin-top: 40px;
+    padding: 0 0;
+  }
+  .About .feature .fea_content > * {
+    width: 45vw;
+    height: 250px;
+  }
+  /* ====== 4 roles ====== */
+  .About .roles {
+    padding: 20px 0;
+  }
+  .About .roles > div {
+    width: 35vw;
+  }
+  /* ====== 5 office photo ====== */
+  .About .company_office {
+    margin: 40px 20px;
+  }
+  .About .company_office > div {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
 }

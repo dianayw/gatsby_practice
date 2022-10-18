@@ -31,7 +31,8 @@ figure,
 figcaption,
 blockquote,
 dl,
-dd {
+dd,
+button {
   margin: 0;
 }
 
