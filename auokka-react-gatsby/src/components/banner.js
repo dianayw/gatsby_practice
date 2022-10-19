@@ -44,7 +44,7 @@ const Banner = () => {
       >
         {bannerImages.map((imageLink, index) => (
           <div className={styles.slide}>
-            <img key={index} src={imageLink}></img>
+            <img key={index} src={imageLink} alt="" />
             <div className={styles.content}>
               <p className={styles.p1}>Auokka</p>
               <p className={styles.p2}>Help towards a career success</p>

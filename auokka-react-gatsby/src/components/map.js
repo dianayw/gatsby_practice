@@ -26,7 +26,7 @@ const Map = () => {
         document.getElementById("map"),
         mapOptions
       );
-      const marker = new google.maps.Marker({
+      new google.maps.Marker({
         position: mapOptions.center,
         map: map,
       });

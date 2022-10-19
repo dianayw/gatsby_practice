@@ -247,7 +247,7 @@ const HomePage = () => {
               Suite 16A, Level 4, 428 George Street, Sydney, NSW 2000, Australia
             </p>
           </div>
-          <div className={styles.contact_import}>
+          <div>
             <Form />
           </div>
         </section>

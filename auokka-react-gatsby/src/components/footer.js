@@ -31,7 +31,12 @@ const Footer = () => {
         {/* ====== right: contact link ====== */}
         <div className={styles.right}>
           <div className={styles.heading}>CONTACT US</div>
-          <button onClick={() => (window.location = "mailto:info@auokka.com")}>
+          <button
+            onClick={() =>
+              typeof window !== `undefined` &&
+              (window.location = "mailto:info@auokka.com")
+            }
+          >
             <StaticImage
               className={styles.icon}
               src="../images/icon_mail.png"

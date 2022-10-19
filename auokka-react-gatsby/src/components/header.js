@@ -31,7 +31,7 @@ const Header = () => {
     console.log("changing from: ", resNav);
     setResNav(!resNav);
   };
-  
+
   // ====== header content ======
   return (
     <header>
@@ -40,7 +40,8 @@ const Header = () => {
         <img className={styles.logo} src={logo} alt="logo_image" />
         <Link
           className={
-            window.location.pathname === "/" ? styles.tabActived : styles.tab
+            typeof window !== `undefined` &&
+            (window.location.pathname === "/" ? styles.tabActived : styles.tab)
           }
           to="/"
         >
@@ -48,9 +49,10 @@ const Header = () => {
         </Link>
         <Link
           className={
-            window.location.pathname.includes("about")
+            typeof window !== `undefined` &&
+            (window.location.pathname.includes("about")
               ? styles.tabActived
-              : styles.tab
+              : styles.tab)
           }
           to="/about"
         >
@@ -58,10 +60,11 @@ const Header = () => {
         </Link>
         <Link
           className={
-            window.location.pathname.includes("products") ||
+            typeof window !== `undefined` &&
+            (window.location.pathname.includes("products") ||
             window.location.pathname.includes("iems")
               ? styles.tabActived
-              : styles.tab
+              : styles.tab)
           }
           to="/products"
           onMouseOver={headerTabExpand}
@@ -70,9 +73,10 @@ const Header = () => {
         </Link>
         <Link
           className={
-            window.location.pathname.includes("contact")
+            typeof window !== `undefined` &&
+            (window.location.pathname.includes("contact")
               ? styles.tabActived
-              : styles.tab
+              : styles.tab)
           }
           to="/contact"
         >
@@ -86,9 +90,10 @@ const Header = () => {
           >
             <Link
               className={
-                window.location.pathname.includes("products")
+                typeof window !== `undefined` &&
+                (window.location.pathname.includes("products")
                   ? styles.extraTabActived
-                  : styles.extraTab
+                  : styles.extraTab)
               }
               to="/products"
             >
@@ -96,9 +101,10 @@ const Header = () => {
             </Link>
             <Link
               className={
-                window.location.pathname.includes("iems")
+                typeof window !== `undefined` &&
+                (window.location.pathname.includes("iems")
                   ? styles.extraTabActived
-                  : styles.extraTab
+                  : styles.extraTab)
               }
               to="/iems"
             >
@@ -119,9 +125,10 @@ const Header = () => {
           <div className={styles.resTabs}>
             <Link
               className={
-                window.location.pathname === "/"
+                typeof window !== `undefined` &&
+                (window.location.pathname === "/"
                   ? styles.resTabActived
-                  : styles.resTab
+                  : styles.resTab)
               }
               to="/"
             >
@@ -129,9 +136,10 @@ const Header = () => {
             </Link>
             <Link
               className={
-                window.location.pathname.includes("about")
+                typeof window !== `undefined` &&
+                (window.location.pathname.includes("about")
                   ? styles.resTabActived
-                  : styles.resTab
+                  : styles.resTab)
               }
               to="/about"
             >
@@ -139,10 +147,11 @@ const Header = () => {
             </Link>
             <Link
               className={
-                window.location.pathname.includes("products") ||
+                typeof window !== `undefined` &&
+                (window.location.pathname.includes("products") ||
                 window.location.pathname.includes("iems")
                   ? styles.resTabActived
-                  : styles.resTab
+                  : styles.resTab)
               }
               to="/products"
               onMouseOver={headerTabExpand}
@@ -151,9 +160,10 @@ const Header = () => {
             </Link>
             <Link
               className={
-                window.location.pathname.includes("products")
+                typeof window !== `undefined` &&
+                (window.location.pathname.includes("products")
                   ? styles.resTabActived
-                  : styles.resTab
+                  : styles.resTab)
               }
               to="/products"
             >
@@ -161,9 +171,10 @@ const Header = () => {
             </Link>
             <Link
               className={
-                window.location.pathname.includes("iems")
+                typeof window !== `undefined` &&
+                (window.location.pathname.includes("iems")
                   ? styles.resTabActived
-                  : styles.resTab
+                  : styles.resTab)
               }
               to="/iems"
             >
@@ -171,9 +182,10 @@ const Header = () => {
             </Link>
             <Link
               className={
-                window.location.pathname.includes("contact")
+                typeof window !== `undefined` &&
+                (window.location.pathname.includes("contact")
                   ? styles.resTabActived
-                  : styles.resTab
+                  : styles.resTab)
               }
               to="/contact"
             >
