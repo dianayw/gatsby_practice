@@ -28,15 +28,6 @@ module.exports = {
     ],
   },
   plugins: [
-    // {
-    //   resolve: "gatsby-plugin-google-analytics",
-    //   options: {
-    //     trackingId: "UA-240638716-1",
-    //     head: "true",
-    //   },
-    // },
-    // { resolve: "react-ga" },
-    "gatsby-plugin-image",
     "gatsby-plugin-sitemap",
     {
       resolve: "gatsby-plugin-manifest",

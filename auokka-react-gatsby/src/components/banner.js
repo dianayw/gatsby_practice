@@ -43,7 +43,7 @@ const Banner = () => {
         style={{ transform: `translate(${-bannerNum * 100}%, 0)` }}
       >
         {bannerImages.map((imageLink, index) => (
-          <div className={styles.slide}>
+          <div key={`banner_slide_${index}`} className={styles.slide}>
             <img key={index} src={imageLink} alt="" />
             <div className={styles.content}>
               <p className={styles.p1}>Auokka</p>

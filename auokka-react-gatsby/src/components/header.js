@@ -1,6 +1,5 @@
 import * as React from "react";
 import { Link } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
 import { useState } from "react";
 import * as styles from "./header.module.css";
 import Login from "./login";
@@ -8,6 +7,7 @@ import Signup from "./signup";
 import logo from "../images/auokka_logo_png.png";
 import crossIcon from "../images/cross_icon.png";
 import navIcon from "../images/responsive_nav_icon.png";
+import accountDefault from "../images/account_default.png";
 
 const Header = () => {
   // extra navigation bar under Products
@@ -40,8 +40,9 @@ const Header = () => {
         <img className={styles.logo} src={logo} alt="logo_image" />
         <Link
           className={
-            typeof window !== `undefined` &&
-            (window.location.pathname === "/" ? styles.tabActived : styles.tab)
+            typeof window !== `undefined` && window.location.pathname === "/"
+              ? styles.tabActived
+              : styles.tab
           }
           to="/"
         >
@@ -50,9 +51,9 @@ const Header = () => {
         <Link
           className={
             typeof window !== `undefined` &&
-            (window.location.pathname.includes("about")
+            window.location.pathname.includes("about")
               ? styles.tabActived
-              : styles.tab)
+              : styles.tab
           }
           to="/about"
         >
@@ -62,9 +63,9 @@ const Header = () => {
           className={
             typeof window !== `undefined` &&
             (window.location.pathname.includes("products") ||
-            window.location.pathname.includes("iems")
+              window.location.pathname.includes("iems"))
               ? styles.tabActived
-              : styles.tab)
+              : styles.tab
           }
           to="/products"
           onMouseOver={headerTabExpand}
@@ -74,9 +75,9 @@ const Header = () => {
         <Link
           className={
             typeof window !== `undefined` &&
-            (window.location.pathname.includes("contact")
+            window.location.pathname.includes("contact")
               ? styles.tabActived
-              : styles.tab)
+              : styles.tab
           }
           to="/contact"
         >
@@ -204,9 +205,9 @@ const Header = () => {
           </Link>
         </div>
         <div className={styles.account}>
-          <StaticImage
+          <img
             className={styles.icon}
-            src="../images/account_default.png"
+            src={accountDefault}
             alt="account default icon"
           />
           <button
